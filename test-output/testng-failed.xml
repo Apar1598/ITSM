@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Failed suite [ITSMSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" name="ITSMChromeTest(failed)">
+    <parameter name="Browser" value="Chrome"/>
+    <classes>
+      <class name="com.WebAutomation.Tests.LoginTests">
+        <methods>
+          <include name="tc001_verifyLoginFunctionality" invocation-numbers="0"/>
+          <include name="setup"/>
+          <include name="tearown"/>
+        </methods>
+      </class> <!-- com.WebAutomation.Tests.LoginTests -->
+    </classes>
+  </test> <!-- ITSMChromeTest(failed) -->
+  <test thread-count="2" name="ITSMEdgeTest(failed)">
+    <parameter name="Browser" value="Edge"/>
+    <classes>
+      <class name="com.WebAutomation.Tests.LoginTests">
+        <methods>
+          <include name="tc001_verifyLoginFunctionality" invocation-numbers="0"/>
+          <include name="setup"/>
+          <include name="tearown"/>
+        </methods>
+      </class> <!-- com.WebAutomation.Tests.LoginTests -->
+    </classes>
+  </test> <!-- ITSMEdgeTest(failed) -->
+</suite> <!-- Failed suite [ITSMSuite] -->

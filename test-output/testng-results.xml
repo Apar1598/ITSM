@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="8" passed="6" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-04-12T16:35:50 IST" name="ITSMSuite" finished-at="2026-04-12T16:39:18 IST" duration-ms="208523">
+    <groups>
+    </groups>
+    <test started-at="2026-04-12T16:35:50 IST" name="ITSMChromeTest" finished-at="2026-04-12T16:37:35 IST" duration-ms="104829">
+      <class name="com.WebAutomation.Tests.LoginTests">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.WebAutomation.Tests.LoginTests@557caf28]" started-at="2026-04-12T16:35:50 IST" name="setup" finished-at="2026-04-12T16:35:58 IST" duration-ms="7317" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="tc001_verifyLoginFunctionality(java.lang.String,java.lang.String)[pri:0, instance:com.WebAutomation.Tests.LoginTests@557caf28]" started-at="2026-04-12T16:35:58 IST" name="tc001_verifyLoginFunctionality" data-provider="Get Login Data" finished-at="2026-04-12T16:36:18 IST" duration-ms="20017" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[63JIezx/Qk+B
+
+]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//button[@type='submit']"}
+  (Session info: chrome=146.0.7680.180)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bb25057317b62726c7fc32f60870d51b, findElement {value=//button[@type='submit'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.180, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\aparg\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:7109}, goog:processID: 18348, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:7109/devtool..., se:cdpVersion: 146.0.7680.180, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bb25057317b62726c7fc32f60870d51b]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@type='submit']"}
+  (Session info: chrome=146.0.7680.180)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bb25057317b62726c7fc32f60870d51b, findElement {value=//button[@type='submit'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.180, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\aparg\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:7109}, goog:processID: 18348, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:7109/devtool..., se:cdpVersion: 146.0.7680.180, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bb25057317b62726c7fc32f60870d51b
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:427)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:421)
+at com.WebAutomation.Pages.LoginPage.clickLogin(LoginPage.java:43)
+at com.WebAutomation.Tests.LoginTests.tc001_verifyLoginFunctionality(LoginTests.java:16)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc001_verifyLoginFunctionality -->
+        <test-method is-config="true" signature="tearown(org.testng.ITestResult)[pri:0, instance:com.WebAutomation.Tests.LoginTests@557caf28]" started-at="2026-04-12T16:36:18 IST" name="tearown" finished-at="2026-04-12T16:36:18 IST" duration-ms="693" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc001_verifyLoginFunctionality status=FAILURE method=LoginTests.tc001_verifyLoginFunctionality(java.lang.String,java.lang.String)[pri:0, instance:com.WebAutomation.Tests.LoginTests@557caf28] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.WebAutomation.Tests.LoginTests@557caf28]" started-at="2026-04-12T16:36:18 IST" name="setup" finished-at="2026-04-12T16:36:25 IST" duration-ms="6094" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="tc001_verifyLoginFunctionality(java.lang.String,java.lang.String)[pri:0, instance:com.WebAutomation.Tests.LoginTests@557caf28]" started-at="2026-04-12T16:36:25 IST" name="tc001_verifyLoginFunctionality" data-provider="Get Login Data" finished-at="2026-04-12T16:36:40 IST" duration-ms="15760" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pU5m0$PWk=v]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc001_verifyLoginFunctionality -->
+        <test-method is-config="true" signature="tearown(org.testng.ITestResult)[pri:0, instance:com.WebAutomation.Tests.LoginTests@557caf28]" started-at="2026-04-12T16:36:40 IST" name="tearown" finished-at="2026-04-12T16:36:41 IST" duration-ms="508" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc001_verifyLoginFunctionality status=SUCCESS method=LoginTests.tc001_verifyLoginFunctionality(java.lang.String,java.lang.String)[pri:0, instance:com.WebAutomation.Tests.LoginTests@557caf28] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.WebAutomation.Tests.LoginTests@557caf28]" started-at="2026-04-12T16:36:41 IST" name="setup" finished-at="2026-04-12T16:36:49 IST" duration-ms="8566" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="tc001_verifyLoginFunctionality(java.lang.String,java.lang.String)[pri:0, instance:com.WebAutomation.Tests.LoginTests@557caf28]" started-at="2026-04-12T16:36:49 IST" name="tc001_verifyLoginFunctionality" data-provider="Get Login Data" finished-at="2026-04-12T16:37:06 IST" duration-ms="16702" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin 3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pU5m0$PWk=vU]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc001_verifyLoginFunctionality -->
+        <test-method is-config="true" signature="tearown(org.testng.ITestResult)[pri:0, instance:com.WebAutomation.Tests.LoginTests@557caf28]" started-at="2026-04-12T16:37:06 IST" name="tearown" finished-at="2026-04-12T16:37:07 IST" duration-ms="402" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc001_verifyLoginFunctionality status=SUCCESS method=LoginTests.tc001_verifyLoginFunctionality(java.lang.String,java.lang.String)[pri:0, instance:com.WebAutomation.Tests.LoginTests@557caf28] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.WebAutomation.Tests.LoginTests@557caf28]" started-at="2026-04-12T16:37:07 IST" name="setup" finished-at="2026-04-12T16:37:17 IST" duration-ms="10673" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="tc001_verifyLoginFunctionality(java.lang.String,java.lang.String)[pri:0, instance:com.WebAutomation.Tests.LoginTests@557caf28]" started-at="2026-04-12T16:37:17 IST" name="tc001_verifyLoginFunctionality" data-provider="Get Login Data" finished-at="2026-04-12T16:37:34 IST" duration-ms="16971" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin 1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[U5m0$PWk=vU]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc001_verifyLoginFunctionality -->
+        <test-method is-config="true" signature="tearown(org.testng.ITestResult)[pri:0, instance:com.WebAutomation.Tests.LoginTests@557caf28]" started-at="2026-04-12T16:37:34 IST" name="tearown" finished-at="2026-04-12T16:37:35 IST" duration-ms="348" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc001_verifyLoginFunctionality status=SUCCESS method=LoginTests.tc001_verifyLoginFunctionality(java.lang.String,java.lang.String)[pri:0, instance:com.WebAutomation.Tests.LoginTests@557caf28] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearown -->
+      </class> <!-- com.WebAutomation.Tests.LoginTests -->
+    </test> <!-- ITSMChromeTest -->
+    <test started-at="2026-04-12T16:37:35 IST" name="ITSMEdgeTest" finished-at="2026-04-12T16:39:18 IST" duration-ms="103633">
+      <class name="com.WebAutomation.Tests.LoginTests">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.WebAutomation.Tests.LoginTests@6c40365c]" started-at="2026-04-12T16:37:35 IST" name="setup" finished-at="2026-04-12T16:37:41 IST" duration-ms="6223" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="tc001_verifyLoginFunctionality(java.lang.String,java.lang.String)[pri:0, instance:com.WebAutomation.Tests.LoginTests@6c40365c]" started-at="2026-04-12T16:37:41 IST" name="tc001_verifyLoginFunctionality" data-provider="Get Login Data" finished-at="2026-04-12T16:38:01 IST" duration-ms="20197" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[63JIezx/Qk+B
+
+]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//button[@type='submit']"}
+  (Session info: MicrosoftEdge=146.0.3856.109)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [f972ea712577cfeb2695bfa579c7680e, findElement {value=//button[@type='submit'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 146.0.3856.109, fedcm:accounts: true, goog:processID: 23840, ms:edgeOptions: {debuggerAddress: localhost:12524}, msedge: {msedgedriverVersion: 146.0.3856.117 (815dfd5fefd..., userDataDir: C:\Users\aparg\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:12524/devtoo..., se:cdpVersion: 146.0.3856.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f972ea712577cfeb2695bfa579c7680e]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@type='submit']"}
+  (Session info: MicrosoftEdge=146.0.3856.109)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [f972ea712577cfeb2695bfa579c7680e, findElement {value=//button[@type='submit'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 146.0.3856.109, fedcm:accounts: true, goog:processID: 23840, ms:edgeOptions: {debuggerAddress: localhost:12524}, msedge: {msedgedriverVersion: 146.0.3856.117 (815dfd5fefd..., userDataDir: C:\Users\aparg\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:12524/devtoo..., se:cdpVersion: 146.0.3856.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f972ea712577cfeb2695bfa579c7680e
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:427)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:421)
+at com.WebAutomation.Pages.LoginPage.clickLogin(LoginPage.java:43)
+at com.WebAutomation.Tests.LoginTests.tc001_verifyLoginFunctionality(LoginTests.java:16)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc001_verifyLoginFunctionality -->
+        <test-method is-config="true" signature="tearown(org.testng.ITestResult)[pri:0, instance:com.WebAutomation.Tests.LoginTests@6c40365c]" started-at="2026-04-12T16:38:01 IST" name="tearown" finished-at="2026-04-12T16:38:02 IST" duration-ms="688" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc001_verifyLoginFunctionality status=FAILURE method=LoginTests.tc001_verifyLoginFunctionality(java.lang.String,java.lang.String)[pri:0, instance:com.WebAutomation.Tests.LoginTests@6c40365c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.WebAutomation.Tests.LoginTests@6c40365c]" started-at="2026-04-12T16:38:02 IST" name="setup" finished-at="2026-04-12T16:38:09 IST" duration-ms="7135" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="tc001_verifyLoginFunctionality(java.lang.String,java.lang.String)[pri:0, instance:com.WebAutomation.Tests.LoginTests@6c40365c]" started-at="2026-04-12T16:38:09 IST" name="tc001_verifyLoginFunctionality" data-provider="Get Login Data" finished-at="2026-04-12T16:38:27 IST" duration-ms="18289" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pU5m0$PWk=v]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc001_verifyLoginFunctionality -->
+        <test-method is-config="true" signature="tearown(org.testng.ITestResult)[pri:0, instance:com.WebAutomation.Tests.LoginTests@6c40365c]" started-at="2026-04-12T16:38:27 IST" name="tearown" finished-at="2026-04-12T16:38:28 IST" duration-ms="438" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc001_verifyLoginFunctionality status=SUCCESS method=LoginTests.tc001_verifyLoginFunctionality(java.lang.String,java.lang.String)[pri:0, instance:com.WebAutomation.Tests.LoginTests@6c40365c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.WebAutomation.Tests.LoginTests@6c40365c]" started-at="2026-04-12T16:38:28 IST" name="setup" finished-at="2026-04-12T16:38:34 IST" duration-ms="6242" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="tc001_verifyLoginFunctionality(java.lang.String,java.lang.String)[pri:0, instance:com.WebAutomation.Tests.LoginTests@6c40365c]" started-at="2026-04-12T16:38:34 IST" name="tc001_verifyLoginFunctionality" data-provider="Get Login Data" finished-at="2026-04-12T16:38:52 IST" duration-ms="17948" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin 3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pU5m0$PWk=vU]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc001_verifyLoginFunctionality -->
+        <test-method is-config="true" signature="tearown(org.testng.ITestResult)[pri:0, instance:com.WebAutomation.Tests.LoginTests@6c40365c]" started-at="2026-04-12T16:38:52 IST" name="tearown" finished-at="2026-04-12T16:38:52 IST" duration-ms="527" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc001_verifyLoginFunctionality status=SUCCESS method=LoginTests.tc001_verifyLoginFunctionality(java.lang.String,java.lang.String)[pri:0, instance:com.WebAutomation.Tests.LoginTests@6c40365c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.WebAutomation.Tests.LoginTests@6c40365c]" started-at="2026-04-12T16:38:52 IST" name="setup" finished-at="2026-04-12T16:39:01 IST" duration-ms="8952" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="tc001_verifyLoginFunctionality(java.lang.String,java.lang.String)[pri:0, instance:com.WebAutomation.Tests.LoginTests@6c40365c]" started-at="2026-04-12T16:39:01 IST" name="tc001_verifyLoginFunctionality" data-provider="Get Login Data" finished-at="2026-04-12T16:39:18 IST" duration-ms="16452" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin 1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[U5m0$PWk=vU]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc001_verifyLoginFunctionality -->
+        <test-method is-config="true" signature="tearown(org.testng.ITestResult)[pri:0, instance:com.WebAutomation.Tests.LoginTests@6c40365c]" started-at="2026-04-12T16:39:18 IST" name="tearown" finished-at="2026-04-12T16:39:18 IST" duration-ms="486" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc001_verifyLoginFunctionality status=SUCCESS method=LoginTests.tc001_verifyLoginFunctionality(java.lang.String,java.lang.String)[pri:0, instance:com.WebAutomation.Tests.LoginTests@6c40365c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearown -->
+      </class> <!-- com.WebAutomation.Tests.LoginTests -->
+    </test> <!-- ITSMEdgeTest -->
+  </suite> <!-- ITSMSuite -->
+</testng-results>

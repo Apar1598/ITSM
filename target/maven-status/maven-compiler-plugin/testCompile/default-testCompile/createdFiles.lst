@@ -1,0 +1,8 @@
+com\WebAutomation\Utilities\CaptureScreenshot.class
+com\WebAutomation\Tests\LoginTests.class
+com\WebAutomation\Assertions\AllVerifications.class
+com\WebAutomation\Base\InitiateDriver.class
+com\WebAutomation\Utilities\PageActions.class
+com\WebAutomation\Utilities\DataProviders.class
+com\WebAutomation\Pages\LoginPage.class
+com\WebAutomation\Utilities\PropertyReader.class
